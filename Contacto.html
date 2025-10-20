@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Contacto</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "O06bpb2D0eJZvyk2l"
+            });
+        })();
+    </script>
+    </script>
     <style>
         * {
             margin: 0;
@@ -140,6 +151,11 @@
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" required></textarea>
                 </div>
+
+
+                <div class="g-recaptcha" data-sitekey="6LcMSfErAAAAAIGvrSey6aM5_9ftw91zyI859Q3_"></div>
+
+                <!--6LcMSfErAAAAAE9ShnhpHpRJqEIEusXIjagUXipA-->
 
                 <button type="submit">Enviar Mensaje</button>
             </form>
